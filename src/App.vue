@@ -2,7 +2,7 @@
 const name = "Vue dinámico"
 const stylecolor = "color: blue"
 const arrayColores = ["blue", "red", "peru"]
-const activo = false
+const activo = true
 </script>
 <template>
   <h1>Hola {{ name.toUpperCase() }}</h1>
@@ -13,6 +13,7 @@ const activo = false
   <h2 v-if="activo === true">Estoy activo v-if</h2>
   <p v-else-if="activo === false">Estoy inactivo v-else-if</p>
   <p v-else>Estoy indeciso v-else</p>
+  <h2 v-show="activo">Estoy activo v-show</h2>
 </template>
 <style>
 h1 {
